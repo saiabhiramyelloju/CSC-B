@@ -1,0 +1,96 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+    margin: 0;
+    padding: 25px;
+    color: #222;
+}
+
+/* Main white box */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+h1 {
+    color: #173b68;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.details {
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 22px;
+}
+
+/* Allows the table to scroll horizontally on small screens */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #aebdcc;
+    padding: 12px 8px;
+}
+
+th {
+    background-color: #173b68;
+    color: white;
+}
+
+.day {
+    background-color: #e5eef8;
+    font-weight: bold;
+}
+
+.lunch {
+    background-color: #fff0c9;
+    font-weight: bold;
+    color: #6a4a00;
+}
+
+tbody tr:nth-child(even) td:not(.day):not(.lunch) {
+    background-color: #f8fafc;
+}
+
+.note {
+    font-size: 14px;
+    color: #555;
+    margin-top: 18px;
+}
+
+/* Adjust the page for mobile screens */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+}
